@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="mobile-web-app-capable" content="yes">
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Şenol Güneş - Türk futbolunun efsanevi teknik direktörü. 50+ yıllık kariyer, 2002 Dünya Kupası üçüncülüğü, 12 kupa ve şampiyonluk.">
+    <meta name="keywords" content="Şenol Güneş, Türk futbolu, teknik direktör, Trabzonspor, Beşiktaş, Milli Takım, 2002 Dünya Kupası">
+    <meta name="author" content="Site Author">
+
+    <!-- Open Graph / Social Media -->
+    <meta property="og:title" content="Şenol Güneş - Bir Futbol Efsanesi">
+    <meta property="og:description" content="Türk futbolunun efsanevi teknik direktörü Şenol Güneş'in hayatı ve kariyeri">
+    <meta property="og:type" content="website">
+
+    <title>Şenol Güneş - Bir Futbol Efsanesi</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Montserrat:wght@300;400;500;600;700&family=Bebas+Neue&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+    <div class="aspect-ratio-container">
+        <div class="aspect-ratio-box">
+
+            <!-- Progress Bar -->
+            <div class="progress-bar" id="progressBar"></div>
+
+            <!-- Fullscreen Button -->
+            <button class="fullscreen-btn" id="fullscreenBtn" title="Tam Ekran (F)">
+                <svg viewBox="0 0 24 24" id="fullscreenIcon">
+                    <path d="M7 14H5v5h5v-2H7v-3zm-2-4h2V7h3V5H5v5zm12 7h-3v2h5v-5h-2v3zM14 5v2h3v3h2V5h-5z"/>
+                </svg>
+            </button>
+
+            <!-- Side Decorations -->
+            <div class="side-decoration left">ŞENOL GÜNEŞ • EFSANEVİ YOLCULUK • 50+ YIL</div>
+            <div class="side-decoration right">TEKNİK DİREKTÖR • STRATEJİST • LİDER</div>
+
+            <!-- Presentation Container -->
+            <div class="presentation" id="presentation">
+                <div class="particles" id="particles"></div>
+
+                <!-- ==================== SLIDE 1: TITLE ==================== -->
+                <div class="slide title-slide active" data-slide="1">
+                    <div class="slide-bg">
+                        <img src="https://images.unsplash.com/photo-1522778119026-d647f0596c20?w=1920" alt="Stadium" loading="lazy">
+                    </div>
+                    <div class="dramatic-overlay"></div>
+                    <div class="flag-accent top-left"></div>
+                    <div class="flag-accent bottom-right"></div>
+                    <div class="slide-content">
+                        <h1 class="main-title animate-fade-up">ŞENOL<br>GÜNEŞ</h1>
+                        <p class="tagline animate-fade-up delay-1">Türk Futbolunun Efsanevi Teknik Direktörü</p>
+                        <div class="year-badge animate-fade-up delay-2">50+ YIL FUTBOLUN İÇİNDE</div>
+                    </div>
+                </div>
+
+                <!-- ==================== SLIDE 2: MEGA STATS ==================== -->
+                <div class="slide" data-slide="2">
+                    <div class="slide-bg">
+                        <img src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=1920" alt="Football" loading="lazy">
+                    </div>
+                    <div class="dramatic-overlay"></div>
+                    <div class="slide-content">
+                        <p class="slide-subtitle animate-fade-up">RAKAMLARLA BİR EFSANE</p>
+                        <h2 class="slide-title animate-fade-up delay-1">Sayılarla<br>Şenol Güneş</h2>
+                        <div class="mega-stats animate-fade-up delay-2">
+                            <div class="mega-stat">
+                                <div class="mega-stat-number">50+</div>
+                                <div class="mega-stat-label">Yıl Futbolda</div>
+                            </div>
+                            <div class="mega-stat">
+                                <div class="mega-stat-number">1000+</div>
+                                <div class="mega-stat-label">Maç Yönetti</div>
+                            </div>
+                            <div class="mega-stat">
+                                <div class="mega-stat-number">12</div>
+                                <div class="mega-stat-label">Kupa & Şampiyonluk</div>
+                            </div>
+                            <div class="mega-stat">
+                                <div class="mega-stat-number">3.</div>
+                                <div class="mega-stat-label">Dünya Kupası</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ==================== SLIDE 3: DOĞUŞ ==================== -->
+                <div class="slide" data-slide="3">
+                    <div class="slide-bg">
+                        <img src="https://images.unsplash.com/photo-1551958219-acbc608c6377?w=1920" alt="Trabzon" loading="lazy">
+                    </div>
+                    <div class="dramatic-overlay"></div>
+                    <div class="slide-content">
+                        <p class="slide-subtitle animate-fade-up">1 HAZİRAN 1952 • TRABZON</p>
+                        <h2 class="slide-title animate-fade-up delay-1">Bir Efsanenin<br>Doğuşu</h2>
+                        <p class="slide-text animate-fade-up delay-2">
+                            Karadeniz'in incisi Trabzon'da dünyaya gelen Şenol Güneş,<br>
+                            Karadeniz Teknik Üniversitesi Beden Eğitimi Bölümü mezunu olarak<br>
+                            hem akademik hem sportif kariyerini birleştirdi.
+                        </p>
+                        <div class="stats-container animate-fade-up delay-3">
+                            <div class="stat-item">
+                                <div class="stat-number">72</div>
+                                <div class="stat-label">Yaşında Aktif</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">KTÜ</div>
+                                <div class="stat-label">Üniversite Mezunu</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">1975</div>
+                                <div class="stat-label">Pro Kariyer Başlangıcı</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ==================== SLIDE 4: KALECİ EFSANESİ ==================== -->
+                <div class="slide" data-slide="4">
+                    <div class="slide-bg">
+                        <img src="https://images.unsplash.com/photo-1431324155629-1a6deb1dec8d?w=1920" alt="Goalkeeper" loading="lazy">
+                    </div>
+                    <div class="dramatic-overlay"></div>
+                    <div class="slide-content">
+                        <p class="slide-subtitle animate-fade-up">1975 - 1987 • TRABZONSPOR</p>
+                        <h2 class="slide-title animate-fade-up delay-1">Kaleci Efsanesi</h2>
+                        <p class="slide-text animate-fade-up delay-2">
+                            Trabzonspor'un altın çağının değişmez kalecisi.<br>
+                            12 yılda 453 maçta kaleyi korudu, rekorlar kırdı, efsane oldu.
+                        </p>
+                        <div class="trophy-showcase animate-fade-up delay-3">
+                            <div class="trophy-item">
+                                <div class="trophy-icon">🏆</div>
+                                <div class="trophy-count">6</div>
+                                <div class="trophy-label">Süper Lig Şampiyonluğu</div>
+                            </div>
+                            <div class="trophy-item">
+                                <div class="trophy-icon">🏅</div>
+                                <div class="trophy-count">3</div>
+                                <div class="trophy-label">Türkiye Kupası</div>
+                            </div>
+                            <div class="trophy-item">
+                                <div class="trophy-icon">⭐</div>
+                                <div class="trophy-count">1110</div>
+                                <div class="trophy-label">Dakika Gol Yemeden</div>
+                            </div>
+                            <div class="trophy-item">
+                                <div class="trophy-icon">🧤</div>
+                                <div class="trophy-count">453</div>
+                                <div class="trophy-label">Resmi Maç</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ==================== SLIDE 5: KULÜP GEÇMİŞİ ==================== -->
+                <div class="slide" data-slide="5">
+                    <div class="slide-bg">
+                        <img src="https://images.unsplash.com/photo-1489944440615-453fc2b6a9a9?w=1920" alt="Stadium Night" loading="lazy">
+                    </div>
+                    <div class="dramatic-overlay"></div>
+                    <div class="slide-content">
+                        <p class="slide-subtitle animate-fade-up">TEKNİK DİREKTÖRLÜK KARİYERİ</p>
+                        <h2 class="slide-title animate-fade-up delay-1">Kulüp Yolculuğu</h2>
+                        <div class="club-grid animate-fade-up delay-2">
+                            <div class="club-card">
+                                <div class="club-logo">
+                                    <img src="assets/images/logos/trabzonspor.png" alt="Trabzonspor" loading="lazy">
+                                </div>
+                                <div class="club-name">Trabzonspor</div>
+                                <div class="club-years">1988-97, 2005, 2009-13, 2024-</div>
+                                <div class="club-role">5 Farklı Dönem</div>
+                            </div>
+                            <div class="club-card">
+                                <div class="club-logo">
+                                    <img src="assets/images/logos/turkey.png" alt="Türkiye Milli Takım" loading="lazy">
+                                </div>
+                                <div class="club-name">Türkiye Milli</div>
+                                <div class="club-years">2000-04, 2019-21</div>
+                                <div class="club-role">Dünya 3.sü</div>
+                            </div>
+                            <div class="club-card">
+                                <div class="club-logo">
+                                    <img src="assets/images/logos/besiktas.png" alt="Beşiktaş" loading="lazy">
+                                </div>
+                                <div class="club-name">Beşiktaş</div>
+                                <div class="club-years">2015-19, 2022-23</div>
+                                <div class="club-role">2x Şampiyon</div>
+                            </div>
+                            <div class="club-card">
+                                <div class="club-logo">
+                                    <img src="assets/images/logos/fcseoul.png" alt="FC Seoul" loading="lazy">
+                                </div>
+                                <div class="club-name">FC Seoul</div>
+                                <div class="club-years">2007-09</div>
+                                <div class="club-role">Güney Kore</div>
+                            </div>
+                            <div class="club-card">
+                                <div class="club-logo">
+                                    <img src="assets/images/logos/bursaspor.png" alt="Bursaspor" loading="lazy">
+                                </div>
+                                <div class="club-name">Bursaspor</div>
+                                <div class="club-years">2014-15</div>
+                                <div class="club-role">Teknik Direktör</div>
+                            </div>
+                            <div class="club-card">
+                                <div class="club-logo">
+                                    <img src="assets/images/logos/boluspor.png" alt="Boluspor" loading="lazy">
+                                </div>
+                                <div class="club-name">Boluspor</div>
+                                <div class="club-years">1989-92</div>
+                                <div class="club-role">Teknik Direktör</div>
+                            </div>
+                            <div class="club-card">
+                                <div class="club-logo">
+                                    <img src="assets/images/logos/antalyaspor.png" alt="Antalyaspor" loading="lazy">
+                                </div>
+                                <div class="club-name">Antalyaspor</div>
+                                <div class="club-years">1997-98</div>
+                                <div class="club-role">Teknik Direktör</div>
+                            </div>
+                            <div class="club-card">
+                                <div class="club-logo">
+                                    <img src="assets/images/logos/sakaryaspor.png" alt="Sakaryaspor" loading="lazy">
+                                </div>
+                                <div class="club-name">Sakaryaspor</div>
+                                <div class="club-years">1998-99</div>
+                                <div class="club-role">Teknik Direktör</div>
+                            </div>
+                            <div class="club-card">
+                                <div class="club-logo">
+                                    <img src="assets/images/logos/istanbulspor.png" alt="İstanbulspor" loading="lazy">
+                                </div>
+                                <div class="club-name">İstanbulspor</div>
+                                <div class="club-years">1992-93</div>
+                                <div class="club-role">Teknik Direktör</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ==================== SLIDE 6: MİLLİ TAKIM - 2002 ==================== -->
+                <div class="slide" data-slide="6">
+                    <div class="slide-bg">
+                        <img src="https://images.unsplash.com/photo-1579952363873-27f3bade9f55?w=1920" alt="World Cup" loading="lazy">
+                    </div>
+                    <div class="dramatic-overlay"></div>
+                    <div class="slide-content">
+                        <p class="slide-subtitle animate-fade-up">2002 FIFA DÜNYA KUPASI</p>
+                        <h2 class="slide-title animate-fade-up delay-1">Tarih Yazan<br>Başarı</h2>
+                        <div class="highlight-box animate-fade-up delay-2">
+                            <span class="big-text">DÜNYA 3.SÜ</span>
+                        </div>
+                        <p class="slide-text animate-fade-up delay-3">
+                            Türk futbol tarihinin en büyük başarısı.<br>
+                            Güney Kore - Japonya'da bronz madalya.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- ==================== SLIDE 7: 2002 MAÇLARI ==================== -->
+                <div class="slide" data-slide="7">
+                    <div class="slide-bg">
+                        <img src="https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=1920" alt="World Cup Matches" loading="lazy">
+                    </div>
+                    <div class="dramatic-overlay"></div>
+                    <div class="slide-content">
+                        <p class="slide-subtitle animate-fade-up">UNUTULMAZ MAÇLAR</p>
+                        <h2 class="slide-title animate-fade-up delay-1">2002 Yolculuğu</h2>
+                        <div class="match-grid animate-fade-up delay-2">
+                            <div class="match-card">
+                                <div class="match-stage">GRUP MAÇI</div>
+                                <div class="match-teams">Türkiye - Brezilya</div>
+                                <div class="match-score">1 - 2</div>
+                            </div>
+                            <div class="match-card">
+                                <div class="match-stage">GRUP MAÇI</div>
+                                <div class="match-teams">Türkiye - Kosta Rika</div>
+                                <div class="match-score">3 - 2</div>
+                            </div>
+                            <div class="match-card">
+                                <div class="match-stage">GRUP MAÇI</div>
+                                <div class="match-teams">Türkiye - Çin</div>
+                                <div class="match-score">3 - 0</div>
+                            </div>
+                            <div class="match-card">
+                                <div class="match-stage">SON 16</div>
+                                <div class="match-teams">Türkiye - Japonya</div>
+                                <div class="match-score">1 - 0</div>
+                                <div class="match-note">Altın Gol</div>
+                            </div>
+                            <div class="match-card">
+                                <div class="match-stage">ÇEYREK FİNAL</div>
+                                <div class="match-teams">Türkiye - Senegal</div>
+                                <div class="match-score">1 - 0</div>
+                                <div class="match-note">Altın Gol</div>
+                            </div>
+                            <div class="match-card">
+                                <div class="match-stage">3.LÜK MAÇI</div>
+                                <div class="match-teams">Türkiye - G. Kore</div>
+                                <div class="match-score">3 - 2</div>
+                                <div class="match-note">Bronz Madalya</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ==================== SLIDE 8: BEŞİKTAŞ DÖNEMİ ==================== -->
+                <div class="slide" data-slide="8">
+                    <div class="slide-bg">
+                        <img src="https://images.unsplash.com/photo-1489944440615-453fc2b6a9a9?w=1920" alt="Besiktas" loading="lazy">
+                    </div>
+                    <div class="dramatic-overlay"></div>
+                    <div class="slide-content">
+                        <p class="slide-subtitle animate-fade-up">2015 - 2019 • BEŞİKTAŞ</p>
+                        <h2 class="slide-title animate-fade-up delay-1">Kartal'la<br>Şampiyonluk</h2>
+                        <div class="trophy-showcase animate-fade-up delay-2">
+                            <div class="trophy-item">
+                                <div class="trophy-icon">🏆</div>
+                                <div class="trophy-count">2</div>
+                                <div class="trophy-label">Süper Lig Şampiyonluğu</div>
+                            </div>
+                            <div class="trophy-item">
+                                <div class="trophy-icon">🏅</div>
+                                <div class="trophy-count">1</div>
+                                <div class="trophy-label">Türkiye Kupası</div>
+                            </div>
+                            <div class="trophy-item">
+                                <div class="trophy-icon">⭐</div>
+                                <div class="trophy-count">1</div>
+                                <div class="trophy-label">Süper Kupa</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ==================== SLIDE 9: ŞAMPİYONLAR LİGİ ==================== -->
+                <div class="slide" data-slide="9">
+                    <div class="slide-bg">
+                        <img src="https://images.unsplash.com/photo-1522778119026-d647f0596c20?w=1920" alt="Champions League" loading="lazy">
+                    </div>
+                    <div class="dramatic-overlay"></div>
+                    <div class="slide-content">
+                        <p class="slide-subtitle animate-fade-up">2016-17 UEFA ŞAMPİYONLAR LİGİ</p>
+                        <h2 class="slide-title animate-fade-up delay-1">Avrupa'da<br>Tarih</h2>
+                        <p class="slide-text animate-fade-up delay-2">
+                            Bir Türk takımını Şampiyonlar Ligi'nde<br>
+                            grup lideri yapan ilk teknik direktör.
+                        </p>
+                        <div class="cl-stats animate-fade-up delay-3">
+                            <div class="cl-stat">
+                                <div class="cl-stat-value">1.</div>
+                                <div class="cl-stat-label">Grup Sıralaması</div>
+                            </div>
+                            <div class="cl-stat">
+                                <div class="cl-stat-value">4G</div>
+                                <div class="cl-stat-label">Galibiyet</div>
+                            </div>
+                            <div class="cl-stat">
+                                <div class="cl-stat-value">14</div>
+                                <div class="cl-stat-label">Puan</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ==================== SLIDE 10: MİLLİ TAKIM İKİNCİ DÖNEM ==================== -->
+                <div class="slide" data-slide="10">
+                    <div class="slide-bg">
+                        <img src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=1920" alt="National Team" loading="lazy">
+                    </div>
+                    <div class="dramatic-overlay"></div>
+                    <div class="slide-content">
+                        <p class="slide-subtitle animate-fade-up">2019 - 2021 • A MİLLİ TAKIM</p>
+                        <h2 class="slide-title animate-fade-up delay-1">İkinci Milli<br>Görev</h2>
+                        <p class="slide-text animate-fade-up delay-2">
+                            EURO 2020 elemelerinde grubunu namağlup tamamladı.
+                        </p>
+                        <div class="achievement-grid animate-fade-up delay-3" style="grid-template-columns: repeat(3, 1fr);">
+                            <div class="achievement-card">
+                                <div class="achievement-icon">🥇</div>
+                                <div class="achievement-title">Grup Birincisi</div>
+                                <div class="achievement-desc">EURO 2020 Elemeleri</div>
+                            </div>
+                            <div class="achievement-card">
+                                <div class="achievement-icon">🔥</div>
+                                <div class="achievement-title">Namağlup</div>
+                                <div class="achievement-desc">10 Maç Yenilgisiz</div>
+                            </div>
+                            <div class="achievement-card">
+                                <div class="achievement-icon">🇫🇷</div>
+                                <div class="achievement-title">Fransa'yı Yendik</div>
+                                <div class="achievement-desc">Tarihi 2-0 Galibiyet</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ==================== SLIDE 11: TRABZONSPOR AŞKI ==================== -->
+                <div class="slide" data-slide="11">
+                    <div class="slide-bg">
+                        <img src="https://images.unsplash.com/photo-1551958219-acbc608c6377?w=1920" alt="Trabzonspor" loading="lazy">
+                    </div>
+                    <div class="dramatic-overlay"></div>
+                    <div class="slide-content">
+                        <p class="slide-subtitle animate-fade-up">EBEDİ AŞK</p>
+                        <h2 class="slide-title animate-fade-up delay-1">Trabzonspor<br>& Şenol Güneş</h2>
+                        <p class="slide-text animate-fade-up delay-2">
+                            Oyuncu olarak 12 yıl, teknik direktör olarak 4 farklı dönem.<br>
+                            Trabzonspor ile Şenol Güneş'in aşkı hiç bitmedi.
+                        </p>
+                        <div class="timeline animate-fade-up delay-3">
+                            <div class="timeline-item">
+                                <div class="timeline-year">1975-87</div>
+                                <div class="timeline-event">Kaleci / 6 Şampiyonluk</div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-year">1988-96</div>
+                                <div class="timeline-event">TD / İlk Dönem</div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-year">2004-05</div>
+                                <div class="timeline-event">TD / 2. Dönem</div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-year">2009-10</div>
+                                <div class="timeline-event">TD / 3. Dönem</div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-year">2021-22</div>
+                                <div class="timeline-event">TD / 4. Dönem</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ==================== SLIDE 12: STADYUM ==================== -->
+                <div class="slide" data-slide="12">
+                    <div class="slide-bg">
+                        <img src="https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?w=1920" alt="Stadium" loading="lazy">
+                    </div>
+                    <div class="dramatic-overlay"></div>
+                    <div class="slide-content">
+                        <p class="slide-subtitle animate-fade-up">ÖLÜMSÜZ MİRAS</p>
+                        <h2 class="slide-title animate-fade-up delay-1">Şenol Güneş<br>Stadyumu</h2>
+                        <p class="slide-text animate-fade-up delay-2">
+                            2016'da açılan Trabzonspor'un muhteşem stadyumu,<br>
+                            efsanenin adını sonsuza dek taşıyor.
+                        </p>
+                        <div class="stats-container animate-fade-up delay-3">
+                            <div class="stat-item">
+                                <div class="stat-number">41.461</div>
+                                <div class="stat-label">Koltuk Kapasitesi</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">2016</div>
+                                <div class="stat-label">Açılış Yılı</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">UEFA</div>
+                                <div class="stat-label">4 Yıldızlı Stat</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ==================== SLIDE 13: TEKNİK DİREKTÖR FABRİKASI ==================== -->
+                <div class="slide" data-slide="13">
+                    <div class="slide-bg">
+                        <img src="https://images.unsplash.com/photo-1486286701208-1d58e9338013?w=1920" alt="Training" loading="lazy">
+                    </div>
+                    <div class="dramatic-overlay"></div>
+                    <div class="slide-content">
+                        <p class="slide-subtitle animate-fade-up">GELECEK NESİL</p>
+                        <h2 class="slide-title animate-fade-up delay-1">Teknik Direktör<br>Fabrikası</h2>
+                        <p class="slide-text animate-fade-up delay-2" style="margin-bottom: 30px;">
+                            Şenol Güneş'in yetiştirdiği oyuncular, bugün Türk futbolunun<br>
+                            en başarılı teknik direktörleri olarak sahada.
+                        </p>
+                        <div class="manager-grid animate-fade-up delay-3">
+                            <div class="manager-card">
+                                <div class="manager-photo">
+                                    <div class="image-placeholder small"><span>OB</span></div>
+                                </div>
+                                <div class="manager-name">Okan Buruk</div>
+                                <div class="manager-current">Galatasaray TD</div>
+                                <div class="manager-note">2002 Dünya Kupası Kadrosu<br>3x Şampiyon Teknik Direktör</div>
+                                <div class="era-badge">AKTİF ŞAMPİYON</div>
+                            </div>
+                            <div class="manager-card">
+                                <div class="manager-photo">
+                                    <div class="image-placeholder small"><span>EB</span></div>
+                                </div>
+                                <div class="manager-name">Emre Belözoğlu</div>
+                                <div class="manager-current">Samsunspor TD</div>
+                                <div class="manager-note">2002 Dünya Kupası Yıldızı<br>Süper Lig'de Aktif TD</div>
+                                <div class="era-badge">SÜPER LİG AKTİF</div>
+                            </div>
+                            <div class="manager-card">
+                                <div class="manager-photo">
+                                    <div class="image-placeholder small"><span>AA</span></div>
+                                </div>
+                                <div class="manager-name">Abdullah Avcı</div>
+                                <div class="manager-current">Trabzonspor TD</div>
+                                <div class="manager-note">Milli Takım Eski TD<br>Trabzonspor Şampiyonu</div>
+                                <div class="era-badge">SÜPER LİG AKTİF</div>
+                            </div>
+                            <div class="manager-card">
+                                <div class="manager-photo">
+                                    <div class="image-placeholder small"><span>SY</span></div>
+                                </div>
+                                <div class="manager-name">Sergen Yalçın</div>
+                                <div class="manager-current">Antalyaspor TD</div>
+                                <div class="manager-note">Beşiktaş'ta Şampiyon<br>Türk Futbolunun Efsanesi</div>
+                                <div class="era-badge">SÜPER LİG AKTİF</div>
+                            </div>
+                            <div class="manager-card">
+                                <div class="manager-photo">
+                                    <div class="image-placeholder small"><span>TK</span></div>
+                                </div>
+                                <div class="manager-name">Tolunay Kafkas</div>
+                                <div class="manager-current">Adana Demirspor TD</div>
+                                <div class="manager-note">Milli Takım Yardımcısı<br>Süper Lig'de Aktif TD</div>
+                                <div class="era-badge">SÜPER LİG AKTİF</div>
+                            </div>
+                            <div class="manager-card">
+                                <div class="manager-photo">
+                                    <div class="image-placeholder small"><span>ÜD</span></div>
+                                </div>
+                                <div class="manager-name">Ümit Davala</div>
+                                <div class="manager-current">Milli Takım Antrenörü</div>
+                                <div class="manager-note">2002 Dünya Kupası Efsanesi<br>A Milli Takım Yardımcısı</div>
+                                <div class="era-badge">MİLLİ TAKIM</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ==================== SLIDE 14: DİĞER YETİŞTİRDİKLERİ ==================== -->
+                <div class="slide" data-slide="14">
+                    <div class="slide-bg">
+                        <img src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=1920" alt="Players" loading="lazy">
+                    </div>
+                    <div class="dramatic-overlay"></div>
+                    <div class="slide-content">
+                        <p class="slide-subtitle animate-fade-up">YETİŞTİRDİĞİ YILDIZLAR</p>
+                        <h2 class="slide-title animate-fade-up delay-1">Efsaneler<br>Geçidi</h2>
+                        <div class="manager-grid animate-fade-up delay-2">
+                            <div class="manager-card">
+                                <div class="manager-photo">
+                                    <div class="image-placeholder small"><span>BK</span></div>
+                                </div>
+                                <div class="manager-name">Bülent Korkmaz</div>
+                                <div class="manager-current">Teknik Direktör</div>
+                                <div class="manager-note">Milli Takım Efsanesi<br>Çeşitli Kulüplerde TD</div>
+                            </div>
+                            <div class="manager-card">
+                                <div class="manager-photo">
+                                    <div class="image-placeholder small"><span>GK</span></div>
+                                </div>
+                                <div class="manager-name">Gökdeniz Karadeniz</div>
+                                <div class="manager-current">Antrenör</div>
+                                <div class="manager-note">Rubin Kazan Efsanesi<br>Antrenörlük Kariyeri</div>
+                            </div>
+                            <div class="manager-card">
+                                <div class="manager-photo">
+                                    <div class="image-placeholder small"><span>İM</span></div>
+                                </div>
+                                <div class="manager-name">İlhan Mansız</div>
+                                <div class="manager-current">2002 Kahramanı</div>
+                                <div class="manager-note">Altın Gol Efsanesi<br>Buz Pateni Şampiyonu</div>
+                            </div>
+                            <div class="manager-card">
+                                <div class="manager-photo">
+                                    <div class="image-placeholder small"><span>BY</span></div>
+                                </div>
+                                <div class="manager-name">Burak Yılmaz</div>
+                                <div class="manager-current">Efsane Forvet</div>
+                                <div class="manager-note">Beşiktaş Döneminde Parladı<br>Gol Kralı</div>
+                            </div>
+                            <div class="manager-card">
+                                <div class="manager-photo">
+                                    <div class="image-placeholder small"><span>HŞ</span></div>
+                                </div>
+                                <div class="manager-name">Hasan Şaş</div>
+                                <div class="manager-current">2002 Yıldızı</div>
+                                <div class="manager-note">Dünya Kupası Golcüsü<br>Galatasaray Efsanesi</div>
+                            </div>
+                            <div class="manager-card">
+                                <div class="manager-photo">
+                                    <div class="image-placeholder small"><span>YB</span></div>
+                                </div>
+                                <div class="manager-name">Yıldıray Baştürk</div>
+                                <div class="manager-current">2002 Kadrosu</div>
+                                <div class="manager-note">Bundesliga Yıldızı<br>Leverkusen Efsanesi</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ==================== SLIDE 15: FUTBOL FELSEFESİ ==================== -->
+                <div class="slide" data-slide="15">
+                    <div class="slide-bg">
+                        <img src="https://images.unsplash.com/photo-1553778263-73a83bab9b0c?w=1920" alt="Strategy" loading="lazy">
+                    </div>
+                    <div class="dramatic-overlay"></div>
+                    <div class="slide-content">
+                        <p class="slide-subtitle animate-fade-up">FUTBOL FELSEFESİ</p>
+                        <h2 class="slide-title animate-fade-up delay-1">Taktiksel Vizyon</h2>
+                        <div class="philosophy-grid animate-fade-up delay-2">
+                            <div class="philosophy-item">
+                                <div class="philosophy-title">🛡️ Savunma Disiplini</div>
+                                <div class="philosophy-desc">Sağlam defans, başarının temelidir. Organize savunma ve kontrollü geçiş oyunu.</div>
+                            </div>
+                            <div class="philosophy-item">
+                                <div class="philosophy-title">⚡ Hızlı Kontra Atak</div>
+                                <div class="philosophy-desc">Rakip açığını yakalama ve ani hücumlarla gol pozisyonu yaratma.</div>
+                            </div>
+                            <div class="philosophy-item">
+                                <div class="philosophy-title">🎯 Taktiksel Esneklik</div>
+                                <div class="philosophy-desc">Rakibe göre strateji değiştirebilen, adaptif oyun anlayışı.</div>
+                            </div>
+                            <div class="philosophy-item">
+                                <div class="philosophy-title">💪 Takım Ruhu</div>
+                                <div class="philosophy-desc">Bireysel yetenekten önce kolektif çalışma ve takım bütünlüğü.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ==================== SLIDE 16: OYUN SİSTEMİ ==================== -->
+                <div class="slide" data-slide="16">
+                    <div class="slide-bg">
+                        <img src="https://images.unsplash.com/photo-1518091043644-c1d4457512c6?w=1920" alt="Tactics" loading="lazy">
+                    </div>
+                    <div class="dramatic-overlay"></div>
+                    <div class="slide-content">
+                        <p class="slide-subtitle animate-fade-up">STRATEJİK YAKLAŞIM</p>
+                        <h2 class="slide-title animate-fade-up delay-1">Oyun Sistemi</h2>
+                        <p class="slide-text animate-fade-up delay-2">
+                            Güneş'in imza dizilişi: Savunma odaklı, etkili kontra ataklara dayanan sistem.
+                        </p>
+                        <div class="tactics-container animate-fade-up delay-3">
+                            <div class="tactic-box">
+                                <div class="tactic-number">4</div>
+                                <div class="tactic-label">Defans</div>
+                            </div>
+                            <div class="tactic-box">
+                                <div class="tactic-number">4</div>
+                                <div class="tactic-label">Orta Saha</div>
+                            </div>
+                            <div class="tactic-box">
+                                <div class="tactic-number">2</div>
+                                <div class="tactic-label">Forvet</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ==================== SLIDE 17: LİDERLİK ==================== -->
+                <div class="slide" data-slide="17">
+                    <div class="slide-bg">
+                        <img src="https://images.unsplash.com/photo-1553778263-73a83bab9b0c?w=1920" alt="Leadership" loading="lazy">
+                    </div>
+                    <div class="dramatic-overlay"></div>
+                    <div class="slide-content">
+                        <p class="slide-subtitle animate-fade-up">LİDERLİK</p>
+                        <h2 class="slide-title animate-fade-up delay-1">Yönetim Felsefesi</h2>
+                        <div class="quote-block animate-fade-up delay-2">
+                            <p class="quote-text">
+                                "Futbol sadece bir oyun değil, bir yaşam biçimidir.<br>
+                                Asla pes etmeyin, asla vazgeçmeyin."
+                            </p>
+                        </div>
+                        <p class="slide-text animate-fade-up delay-3" style="margin-top: 40px; opacity: 0.8;">
+                            — Şenol Güneş
+                        </p>
+                    </div>
+                </div>
+
+                <!-- ==================== SLIDE 18: MOTİVASYON ==================== -->
+                <div class="slide" data-slide="18">
+                    <div class="slide-bg">
+                        <img src="https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=1920" alt="Motivation" loading="lazy">
+                    </div>
+                    <div class="dramatic-overlay"></div>
+                    <div class="slide-content">
+                        <p class="slide-subtitle animate-fade-up">MOTİVASYON</p>
+                        <h2 class="slide-title animate-fade-up delay-1">İlham Kaynağı</h2>
+                        <div class="philosophy-grid animate-fade-up delay-2">
+                            <div class="philosophy-item">
+                                <div class="philosophy-title">❤️ Tutkulu Yaklaşım</div>
+                                <div class="philosophy-desc">Futbola olan aşkını oyuncularına bulaştırır.</div>
+                            </div>
+                            <div class="philosophy-item">
+                                <div class="philosophy-title">🤝 Aile Ortamı</div>
+                                <div class="philosophy-desc">Takımı bir aile gibi görür. Birlik ve beraberlik.</div>
+                            </div>
+                            <div class="philosophy-item">
+                                <div class="philosophy-title">🎤 Etkili İletişim</div>
+                                <div class="philosophy-desc">Soyunma odası konuşmalarıyla efsaneleşen motivasyon.</div>
+                            </div>
+                            <div class="philosophy-item">
+                                <div class="philosophy-title">🎯 Hedef Odaklılık</div>
+                                <div class="philosophy-desc">Net hedefler koyar ve takımı bu hedeflere kilitler.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ==================== SLIDE 19: DÜNYA BASINDAN ==================== -->
+                <div class="slide" data-slide="19">
+                    <div class="slide-bg">
+                        <img src="https://images.unsplash.com/photo-1489944440615-453fc2b6a9a9?w=1920" alt="International" loading="lazy">
+                    </div>
+                    <div class="dramatic-overlay"></div>
+                    <div class="slide-content">
+                        <p class="slide-subtitle animate-fade-up">DÜNYA BASININDA</p>
+                        <h2 class="slide-title animate-fade-up delay-1">Uluslararası<br>Övgüler</h2>
+                        <div class="press-grid animate-fade-up delay-2">
+                            <div class="press-card">
+                                <div class="press-quote">"Güneş, Türk futbolunu dünya sahnesine taşıyan stratejik deha."</div>
+                                <div class="press-source">BBC Sport</div>
+                                <div class="press-year">2002</div>
+                            </div>
+                            <div class="press-card">
+                                <div class="press-quote">"Savunma organizasyonu ve kontra atak konusunda usta bir taktisyen."</div>
+                                <div class="press-source">L'Équipe</div>
+                                <div class="press-year">2002</div>
+                            </div>
+                            <div class="press-card">
+                                <div class="press-quote">"Beşiktaş'ı Avrupa'nın korkulu rüyası haline getirdi."</div>
+                                <div class="press-source">Marca</div>
+                                <div class="press-year">2017</div>
+                            </div>
+                            <div class="press-card">
+                                <div class="press-quote">"Turnuvanın en iyi teknik direktörlerinden biri. Türkiye'yi üçüncülüğe taşıdı."</div>
+                                <div class="press-source">UEFA.com</div>
+                                <div class="press-year">2002</div>
+                            </div>
+                            <div class="press-card">
+                                <div class="press-quote">"Şampiyonlar Ligi'nde bir Türk takımını grup lideri yapan ilk teknik direktör."</div>
+                                <div class="press-source">The Guardian</div>
+                                <div class="press-year">2017</div>
+                            </div>
+                            <div class="press-card">
+                                <div class="press-quote">"Türkiye'nin en başarılı teknik direktörü. Nesiller yetiştiren bir usta."</div>
+                                <div class="press-source">FIFA.com</div>
+                                <div class="press-year">2019</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ==================== SLIDE 20: GENÇ YETENEKLER ==================== -->
+                <div class="slide" data-slide="20">
+                    <div class="slide-bg">
+                        <img src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=1920" alt="Youth" loading="lazy">
+                    </div>
+                    <div class="dramatic-overlay"></div>
+                    <div class="slide-content">
+                        <p class="slide-subtitle animate-fade-up">GELİŞİM FELSEFESİ</p>
+                        <h2 class="slide-title animate-fade-up delay-1">Genç Yetenekler</h2>
+                        <div class="philosophy-grid animate-fade-up delay-2">
+                            <div class="philosophy-item">
+                                <div class="philosophy-title">🌟 Güven Ortamı</div>
+                                <div class="philosophy-desc">Genç oyunculara sorumluluk vererek özgüvenlerini artırır.</div>
+                            </div>
+                            <div class="philosophy-item">
+                                <div class="philosophy-title">📈 Kariyer Planlama</div>
+                                <div class="philosophy-desc">Her oyuncunun güçlü yanlarını keşfeder ve geliştirir.</div>
+                            </div>
+                            <div class="philosophy-item">
+                                <div class="philosophy-title">🎓 Mentorluk</div>
+                                <div class="philosophy-desc">Deneyimli oyuncuları gençlerle eşleştirerek bilgi transferi.</div>
+                            </div>
+                            <div class="philosophy-item">
+                                <div class="philosophy-title">🏋️ Fiziksel Hazırlık</div>
+                                <div class="philosophy-desc">Modern antrenman ve bilimsel yaklaşımla fiziksel zirve.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ==================== SLIDE 21: ACHIEVEMENTS ==================== -->
+                <div class="slide" data-slide="21">
+                    <div class="slide-bg">
+                        <img src="https://images.unsplash.com/photo-1579952363873-27f3bade9f55?w=1920" alt="Achievements" loading="lazy">
+                    </div>
+                    <div class="dramatic-overlay"></div>
+                    <div class="slide-content">
+                        <p class="slide-subtitle animate-fade-up">TÜM BAŞARILAR</p>
+                        <h2 class="slide-title animate-fade-up delay-1">Kupa Dolabı</h2>
+                        <div class="achievement-grid animate-fade-up delay-2">
+                            <div class="achievement-card">
+                                <div class="achievement-icon">🏆</div>
+                                <div class="achievement-title">8 Süper Lig</div>
+                                <div class="achievement-desc">6 Oyuncu + 2 TD</div>
+                            </div>
+                            <div class="achievement-card">
+                                <div class="achievement-icon">🏆</div>
+                                <div class="achievement-title">5 Türkiye Kupası</div>
+                                <div class="achievement-desc">3 Oyuncu + 2 TD</div>
+                            </div>
+                            <div class="achievement-card">
+                                <div class="achievement-icon">🥉</div>
+                                <div class="achievement-title">Dünya 3.sü</div>
+                                <div class="achievement-desc">2002 Dünya Kupası</div>
+                            </div>
+                            <div class="achievement-card">
+                                <div class="achievement-icon">🎖️</div>
+                                <div class="achievement-title">UEFA Ödülü</div>
+                                <div class="achievement-desc">2002 Yılın TD'si</div>
+                            </div>
+                            <div class="achievement-card">
+                                <div class="achievement-icon">🏟️</div>
+                                <div class="achievement-title">Stadyum</div>
+                                <div class="achievement-desc">Adına İthaf Edildi</div>
+                            </div>
+                            <div class="achievement-card">
+                                <div class="achievement-icon">⭐</div>
+                                <div class="achievement-title">CL Grup Lideri</div>
+                                <div class="achievement-desc">İlk Türk Takımı</div>
+                            </div>
+                            <div class="achievement-card">
+                                <div class="achievement-icon">🌍</div>
+                                <div class="achievement-title">TOP 50</div>
+                                <div class="achievement-desc">Tüm Zamanlar</div>
+                            </div>
+                            <div class="achievement-card">
+                                <div class="achievement-icon">👨‍🏫</div>
+                                <div class="achievement-title">TD Yetiştirdi</div>
+                                <div class="achievement-desc">Yeni Nesil Liderler</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ==================== SLIDE 22: QUOTE ==================== -->
+                <div class="slide" data-slide="22">
+                    <div class="slide-bg">
+                        <img src="https://images.unsplash.com/photo-1431324155629-1a6deb1dec8d?w=1920" alt="Quote" loading="lazy">
+                    </div>
+                    <div class="dramatic-overlay"></div>
+                    <div class="slide-content">
+                        <div class="quote-block animate-fade-up delay-2">
+                            <p class="quote-text">
+                                "Ben sadece futbolu sevdim ve bu sevgiyi<br>
+                                her gün yaşamaya çalıştım."
+                            </p>
+                        </div>
+                        <p class="slide-text animate-fade-up delay-3" style="margin-top: 40px; opacity: 0.8;">
+                            50 yılı aşkın süredir Türk futbolunun kalbinde<br>
+                            atan bir efsane...
+                        </p>
+                    </div>
+                </div>
+
+                <!-- ==================== SLIDE 23: FINAL ==================== -->
+                <div class="slide closing-slide" data-slide="23">
+                    <div class="slide-bg">
+                        <img src="https://images.unsplash.com/photo-1508098682722-e99c43a406b2?w=1920" alt="Final" loading="lazy">
+                    </div>
+                    <div class="dramatic-overlay"></div>
+                    <div class="flag-accent top-left"></div>
+                    <div class="flag-accent bottom-right"></div>
+                    <div class="slide-content">
+                        <h1 class="main-title animate-fade-up">ŞENOL<br>GÜNEŞ</h1>
+                        <p class="slide-subtitle animate-fade-up delay-1">Bir Efsane. Bir Lider. Bir Usta.</p>
+                        <div class="closing-divider animate-fade-up delay-2"></div>
+                        <p class="slide-text animate-fade-up delay-2" style="margin-top: 20px;">
+                            Türk Futbolunun Gururu
+                        </p>
+                        <div class="year-badge animate-fade-up delay-3" style="margin-top: 40px;">
+                            TEŞEKKÜRLER
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Navigation -->
+            <div class="nav-container">
+                <button class="nav-btn" id="prevBtn">◀</button>
+                <div class="slide-counter">
+                    <span id="currentSlide">1</span> / <span id="totalSlides">1</span>
+                </div>
+                <button class="nav-btn" id="nextBtn">▶</button>
+            </div>
+
+            <!-- Keyboard Hint -->
+            <div class="keyboard-hint">← → Space | F: Tam Ekran</div>
+
+        </div> <!-- close aspect-ratio-box -->
+    </div> <!-- close aspect-ratio-container -->
+
+    <!-- Scripts -->
+    <script src="assets/js/config.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
