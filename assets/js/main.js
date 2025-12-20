@@ -95,9 +95,10 @@
     // Slide Navigation (Optimized for Mobile)
     // ==========================================================================
 
-    function goToSlide(index) {
+    function goToSlide(index, updateHash = true) {
         if (index < 0 || index >= state.totalSlides) return;
         if (state.isTransitioning) return;  // Prevent rapid transitions
+        if (index === state.currentSlide) return;  // Already on this slide
 
         state.isTransitioning = true;
 
@@ -115,9 +116,48 @@
                 state.currentSlide = index;
                 nextSlideEl.classList.add('active');
                 updateProgress();
+
+                // Update URL hash for bookmarking/refresh support
+                if (updateHash) {
+                    updateURLHash(index);
+                }
+
                 state.isTransitioning = false;
             }, CONFIG.TRANSITION_DELAY);
         });
+    }
+
+    // ==========================================================================
+    // URL Hash Management
+    // ==========================================================================
+
+    function updateURLHash(slideIndex) {
+        const slideNumber = slideIndex + 1;
+        const newHash = `#slide-${slideNumber}`;
+        if (window.location.hash !== newHash) {
+            history.pushState(null, '', newHash);
+        }
+    }
+
+    function getSlideFromHash() {
+        const hash = window.location.hash;
+        if (!hash) return 0;
+
+        // Support formats: #slide-5, #5, #slide5
+        const match = hash.match(/^#(?:slide-?)?(\d+)$/);
+        if (match) {
+            const slideNumber = parseInt(match[1], 10);
+            // Convert to 0-based index and clamp to valid range
+            return Math.max(0, Math.min(slideNumber - 1, state.totalSlides - 1));
+        }
+        return 0;
+    }
+
+    function handleHashChange() {
+        const slideIndex = getSlideFromHash();
+        if (slideIndex !== state.currentSlide) {
+            goToSlide(slideIndex, false);  // Don't update hash again
+        }
     }
 
     function nextSlide() {
@@ -266,6 +306,9 @@
         document.addEventListener('fullscreenchange', updateFullscreenIcon);
         document.addEventListener('webkitfullscreenchange', updateFullscreenIcon);
 
+        // URL hash change (browser back/forward)
+        window.addEventListener('popstate', handleHashChange);
+
         // Keyboard
         document.addEventListener('keydown', handleKeyboard);
 
@@ -331,6 +374,18 @@
 
         // Set total slides count
         DOM.totalSlidesEl.textContent = state.totalSlides;
+
+        // Check URL hash for initial slide
+        const initialSlide = getSlideFromHash();
+        if (initialSlide > 0) {
+            // Navigate to the slide from URL hash (without animation)
+            DOM.slides[0].classList.remove('active');
+            DOM.slides[initialSlide].classList.add('active');
+            state.currentSlide = initialSlide;
+        } else if (!window.location.hash) {
+            // Set initial hash if none exists
+            history.replaceState(null, '', '#slide-1');
+        }
 
         // Initialize systems
         updateScale();
