@@ -312,16 +312,11 @@ html, body {
     font-size: 180px;
     font-weight: 900;
     line-height: 0.9;
+    color: var(--gold); /* Fallback for browsers without gradient text support */
     background: linear-gradient(180deg, var(--light) 0%, var(--gold) 50%, var(--turkish-red) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    animation: titleGlow 3s ease-in-out infinite alternate;
-}
-
-@keyframes titleGlow {
-    0% { filter: drop-shadow(0 0 20px rgba(201, 162, 39, 0.3)); }
-    100% { filter: drop-shadow(0 0 40px rgba(201, 162, 39, 0.6)); }
 }
 
 .title-slide .tagline {
@@ -342,12 +337,6 @@ html, body {
     font-size: 24px;
     letter-spacing: 0.3em;
     margin-top: 40px;
-}
-
-/* Disable title glow animation on mobile */
-body.is-mobile .title-slide .main-title {
-    animation: none;
-    filter: drop-shadow(0 0 20px rgba(201, 162, 39, 0.3));
 }
 
 /* ==========================================================================
@@ -747,11 +736,11 @@ body.is-mobile .title-slide .main-title {
     font-size: 160px;
     font-weight: 900;
     line-height: 0.95;
+    color: var(--gold); /* Fallback for browsers without gradient text support */
     background: linear-gradient(180deg, var(--light) 0%, var(--gold) 50%, var(--turkish-red) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    animation: titleGlow 3s ease-in-out infinite alternate;
     margin-bottom: 30px;
 }
 
@@ -789,10 +778,7 @@ body.is-mobile .title-slide .main-title {
     }
 }
 
-/* Disable heavy animations on mobile for closing slide */
-body.is-mobile .closing-slide .main-title {
-    animation: none;
-}
+/* Mobile optimizations for closing slide */
 
 body.is-mobile .closing-slide .year-badge {
     animation: none;
